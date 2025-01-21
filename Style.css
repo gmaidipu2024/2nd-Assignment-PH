@@ -104,6 +104,22 @@ body {
   border: none;
   margin-top: 20px;
 }
+.view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+}
+.view button{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 12px;
+  font-size: 15px;
+  border: none;
+  
+}
 .hero-img {
   width: 100%;
   height: auto;
