@@ -14,8 +14,13 @@
 body{
   font-family: "Quicksand", serif;
 }
-
+.border{
+  border-bottom: 1px solid #FEA301;
+  margin-top: 5px;
+  display: none;
+}
 .my-nav{
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -57,6 +62,7 @@ body{
 }
 .responsiv-btn{
   display: none;
+  font-size: 35px;
 
 }
 .btn{
@@ -67,6 +73,8 @@ body{
   font-size: 15px;
   border: none;
 }
+
+/* hero part */
 .hero{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,11 +120,153 @@ body{
 .span2{
   color: #01ACFD;
 }
+/* Standard Curiculum */
+h2{
+  text-align: center;
+}
+.Curriculum-main{
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.Curriculum-main h2{
+  color: #000000;
+  font-size: 40px;
+  line-height: 57.5px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.sub-Curriculum{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  margin-left: 30px;
+  gap: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sub-2 h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #202020;
+  font-size: 18px;
+}
+.sub-2 p{
+  color: #808080;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+.sub-3 h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #202020;
+  font-size: 18px;
+}
+.sub-3 p{
+  color: #808080;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+.sub-4 h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #202020;
+  font-size: 18px;
+}
+.sub-4 p{
+  color: #808080;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 22px;
+}
+.sub-2 a{
+  color: #64C8FF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+.sub-3 a{
+  color: #F0AA00;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+.sub-4 a{
+  color: #8700FF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px 0px;
+}
+.sub-2{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);;
+  border: 0.94px solid rgb(242, 232, 255);
+  
+}
 
 
+.sub-3{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border: 0.94px solid rgb(255, 244, 220);
+}
+.sub-4{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  border: 0.94px solid rgb(242, 232, 255);
+}
 
 @media only screen and (max-width:576px) {
   .responsiv-btn{
+    display: block;
+  }
+  .logo-h2{
+    display: none;
+  }
+  .border{
     display: block;
   }
   .items{
@@ -149,4 +299,24 @@ body{
     
     
   }
+
+  .sub-Curriculum{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+  }
+  .sub-2 , .sub-3 , .sub-4{
+    width: 95%;
+  }
+  .Curriculum-main h2{
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
 }
