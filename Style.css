@@ -490,6 +490,12 @@ h2 {
   font-weight: 700;
   line-height: 26px;
 }
+marquee{
+  color: white;
+  font-weight: 700;
+  background-color: #fea301;
+}
+
 
 @media only screen and (max-width: 576px) {
   .my-nav {
